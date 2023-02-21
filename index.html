@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M & G</title>
+    <!-- Bootstrap CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/icofont.min.css" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-4 bg-light sticky-top">
+      <div class="container">
+        <a
+          href="#"
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+          <i class="icofont-jacket lgIcon pe-1" aria-hidden="true"></i>
+          <span class="ms-1">Momo & Gabbana</span>
+        </a>
+
+        <div class="order-lg-1">
+          <button type="button" class="btn navBtn">
+            <i class="icofont-search-2" aria-hidden="true"></i>
+          </button>
+
+          <button type="button" class="btn navBtn position-relative">
+            <i class="icofont-cart-alt mdIcon" aria-hidden="true"></i>
+            <span
+              class="position-absolute translate-middle start-100 badge bgPink"
+              >3</span
+            >
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse text-center text-lg-start"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#catagories" class="nav-link">Catagories</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutus" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactus" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="carousel slide"
+    data-ride="carousel">
+      <!-- Banner -->
+      <!-- Carousel -->
+      <div class="container d-flex align-items-center justify-content-center" id="headerBg">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              Braindead Items
+            </div>
+            <div class="carousel-item">
+              For
+            </div>
+            <div class="carousel-item">
+              Basically Nothing
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  
+      </div>
+      
+    </header>
+
+    <!-- Content -->
+    <!-- Catagories -->
+    <div id="catagories" class="container mt-3 text-center">
+      <h3 class="my-3 text-md-center">Catagories</h3>
+      <div class="row">
+        
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="img/men.jpeg" alt="men cloting" class="card-img-top">
+            <div class="card-body">
+              <div>
+                <button class="btn btn-dark mt-2" type="button" data-filter="men" onclick="catagoryFilter(this)">Men</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="img/women.jpeg" alt="women cloting" class="card-img-top">
+            <div class="card-body">
+              <div>
+                <button class="btn btn-dark mt-2" type="button" data-filter="women" onclick="catagoryFilter(this)">women</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="img/boys.jpeg" alt="kids cloting" class="card-img-top img-fluid">
+            <div class="card-body">
+              <div>
+                <button class="btn btn-dark mt-2" type="button" data-filter="kids" onclick="catagoryFilter(this)">Kids</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!-- Items -->
+    <div class="container my-4 cartPink">
+      <h3 class="my-3 text-md-center">Top Sellers</h3>
+      <div class="row g-4 text-sm-center text-md-start" id="shop-items"> 
+        
+        <!-- Men Items -->
+        <div class="col-lg-3 col-md-6 store-item men" data-item="men">  
+
+          <div class="card">
+            <img src="img/mhoodie.jpeg" class="card-img-top" alt="mens hoodie">
+            <div class="card-body">
+              <h5 class="card-title">Cool Hoodie </h5>
+              <p class="card-text">$25</p>
+              <a href="#" class="btn ">Add to cart</i></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 store-item men" data-item="men">  
+    
+          <div class="card">
+            <img src="img/mjoggers.jpeg" class="card-img-top" alt="mens joggrs">
+            <div class="card-body">
+              <h5 class="card-title">Running Joggers</h5>
+              <p class="card-text">$20</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 store-item men" data-item="men">  
+    
+          <div class="card">
+            <img src="img/mcoat.jpeg" class="card-img-top" alt="mens oversized coat">
+            <div class="card-body">
+              <h5 class="card-title">Oversized Coat</h5>
+              <p class="card-text">$120</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item men" data-item="men">  
+    
+          <div class="card">
+            <img src="img/mpants.jpeg" class="card-img-top" alt="mens oversized pants">
+            <div class="card-body">
+              <h5 class="card-title">Oversized Pants</h5>
+              <p class="card-text">$80</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Women Items -->
+        <div class="col-lg-3 col-md-6 store-item women" data-item="women">  
+    
+          <div class="card">
+            <img src="img/wtop.jpeg" class="card-img-top" alt="Women top">
+            <div class="card-body">
+              <h5 class="card-title">Kim Top</h5>
+              <p class="card-text">$800</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item women" data-item="women">  
+    
+          <div class="card">
+            <img src="img/wskirt.jpeg" class="card-img-top" alt="Women miniskirt">
+            <div class="card-body">
+              <h5 class="card-title">Kim Miniskirt</h5>
+              <p class="card-text">$950</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item women" data-item="women">  
+    
+          <div class="card">
+            <img src="img/wtulle.jpeg" class="card-img-top" alt="women tulle shirt">
+            <div class="card-body">
+              <h5 class="card-title">Tulle Shirt</h5>
+              <p class="card-text">$150</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item women" data-item="women">  
+    
+          <div class="card">
+            <img src="img/wjeans.jpeg" class="card-img-top" alt="ripped jeans">
+            <div class="card-body">
+              <h5 class="card-title">Ripped Jeans</h5>
+              <p class="card-text">$80</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Kids Items -->
+        <div class="col-lg-3 col-md-6 store-item kids" data-item="kids">  
+    
+          <div class="card">
+            <img src="img/bswitshirt.jpeg" class="card-img-top" alt="boy sweatshirt">
+            <div class="card-body">
+              <h5 class="card-title">White Sweatshirt</h5>
+              <p class="card-text">$70</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item kids" data-item="kids">  
+    
+          <div class="card">
+            <img src="img/bshorts.jpeg" class="card-img-top" alt="boy shorts">
+            <div class="card-body">
+              <h5 class="card-title">White Shots</h5>
+              <p class="card-text">$50</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item kids" data-item="kids">  
+    
+          <div class="card">
+            <img src="img/gdress.jpeg" class="card-img-top" alt="girl dess">
+            <div class="card-body">
+              <h5 class="card-title">Floral Dress</h5>
+              <p class="card-text">$100</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-lg-3 col-md-6 store-item kids" data-item="kids">  
+    
+          <div class="card">
+            <img src="img/gshoes.jpeg" class="card-img-top" alt="girl shoes">
+            <div class="card-body">
+              <h5 class="card-title">Floral Shoes</h5>
+              <p class="card-text">$60</p>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+
+    <!-- About Us -->
+    <div id="aboutus" class="container my-5 text-md-center">
+      
+      <h3>About Us</h3>
+      <p class="text-sm-center text-md-start">Momo&Gabbana is a high fashion brand making it possible for customers around the world to express themselves through exclusive designs without the luxury price tag. We are an inclusive company that strives to create pieces that are stylish, comfortable, and affordable for the whole family. </p>
+    
+    </div>
+
+    <!-- Contact us -->
+    <div id="contactus" class="container my-3 text-md-center">
+      <h3>Contact Us</h3>
+      <!-- Form -->
+      <div class="w-75 mx-auto shadow">
+        
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave your request here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Request</label>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-light py-4 text-center mt-5 lead">
+      &copy; 2023 M & G
+    </div>
+
+    <!-- Bootsrap JS CDN link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+      <!-- External JS file link  -->
+      <script  src="js/main.js"></script>
+  </body>
+</html>

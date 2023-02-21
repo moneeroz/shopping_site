@@ -1,0 +1,71 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+  --large-font: 'Josefin Sans', sans-serif;
+  --small-font: 'Poppins', sans-serif;
+  --special-font: 'Kaushan Script', cursive;
+  --pink-color: rgb(245, 82, 109);
+}
+
+body {
+  font-family: var(--small-font);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1) ;
+}
+/* Navbar shopping cart button */
+.bgPink {
+  background-color: var(--pink-color);
+}
+/* Navbar brand */
+.navbar-brand {
+  font-family: var(--large-font);
+}
+
+.mdIcon {
+  font-size: 1.5em;
+}
+
+.lgIcon {
+  font-size: 2em;
+}
+
+.nav-link:hover, .cartPink div a:hover {
+  color: var(--pink-color);
+}
+
+/* Header */
+#headerBg {
+  background: url(../img/jumbotron.jpg);
+  height: 500px;
+  /* background-size: 100% 100%; */
+
+}
+
+.carousel-inner {
+  color: rgb(131, 204, 228);
+  font-size: 5em;
+  font-family: var(--special-font);
+  margin-inline: 2em;
+  text-shadow: 4px 4px var(--pink-color);
+  
+}
+.card {
+  border: none;
+}
+.card img{
+  transition: all 0.3s ease;
+}
+.card:hover img{
+  transform: scale(1.1);
+  margin-bottom: 1em;
+}
+
+.navBtn:hover {
+  transform: scale(1.3); 
+  transition: all 0.3s ease;
+}
